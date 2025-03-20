@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web Bán Hàng</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <script>
+        let slideIndex = 0;
+        
+        function showSlides() {
+            let slides = document.querySelector(".slides");
+            let totalSlides = document.querySelectorAll(".slide").length;
+        
+            slideIndex++;
+            if (slideIndex >= totalSlides) { slideIndex = 0; }
+        
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+            setTimeout(showSlides, 3000); // Chuyển ảnh sau 3 giây
+        }
+        
+        function plusSlides(n) {
+            let slides = document.querySelector(".slides");
+            let totalSlides = document.querySelectorAll(".slide").length;
+        
+            slideIndex += n;
+            if (slideIndex >= totalSlides) { slideIndex = 0; }
+            if (slideIndex < 0) { slideIndex = totalSlides - 1; }
+        
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+        
+        showSlides();
+        </script>
+       
+                
+</head>
+<body>
+    <div class="header">Trang Web Bán Hàng</div>
+    
+    <div class="navbar">
+        <a href="https://www.nike.com/vn/">Trang Chủ</a>
+        <a href="https://www.nike.com/vn/w/shoes-y7ok">Sản Phẩm</a>
+        <a href="#">Liên Hệ</a>
+    </div>   
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide"><img src="image/banner1.png" alt="Banner 1"></div>
+            <div class="slide"><img src="image/banner2.jpg" alt="Banner 2"></div>
+            <div class="slide"><img src="image/banner3.jpg" alt="Banner 3"></div>
+        </div>
+        <!-- Nút điều hướng -->
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div> 
+
+    <div class="container">
+        <div class="product">
+            <img src="image/hinh1.png" alt="Sản Phẩm 1">
+            <h3>Nike Court Vision Low</h3>
+            <p>Men's Shoes<br>Giá: 2.069.000đ</p>
+            <a href="https://www.nike.com/vn/t/court-vision-low-shoes-q0sr67/FQ8075-133" class="button">Mua Ngay</a>
+        </div>
+        <div class="product">
+            <img src="image/hinh2.png" alt="Sản Phẩm 2">
+            <h3>Nike P-6000</h3>
+            <p>Women's Shoes<br>Giá: 1.476.000đ</p>
+            <a href="https://www.nike.com/vn/t/p-6000-shoes-5qgkXp/FV6603-101" class="button">Mua Ngay</a>
+        </div>
+        <div class="product">
+            <img src="image/hinh3.png" alt="Sản Phẩm 3">
+            <h3>Nike Dunk Low</h3>
+            <p>Older Kids' Shoes<br>Giá: 4.980.000đ</p>
+            <a href="https://www.nike.com/vn/t/dunk-low-older-shoes-w3K3fL/HJ9202-001" class="button">Mua Ngay</a>
+        </div>
+        <div class="product">
+            <img src="image/hinh4.png" alt="Sản Phẩm 4">
+            <h3>Nike Full Force Low</h3>
+            <p>Older Kids' Shoes<br>Giá: 3.213.000</p>
+            <a href="https://www.nike.com/vn/t/full-force-low-older-shoes-lTHX68/FV5929-101" class="button">Mua Ngay</a>
+        </div>
+        <div class="product">
+            <img src="image/hinh5.png" alt="Sản Phẩm 5">
+            <h3>Air Jordan 1 Mid</h3>
+            <p>Men's Shoes<br>Giá: 2.879.000</p>
+            <a href="https://www.nike.com/vn/t/air-jordan-1-mid-shoes-SQf7DM/DQ8426-010" class="button">Mua Ngay</a>
+        </div>
+        <div class="product">
+            <img src="image/hinh6.png" alt="Sản Phẩm 6">
+            <h3>Nike Run Swift 3</h3>
+            <p>Men's Road Running Shoes<br>Giá: 2,189,000đ</p>
+            <a href="https://www.nike.com/vn/t/run-swift-3-road-running-shoes-BrHm16/DR2695-005" class="button">Mua Ngay</a>
+        </div>
+        <div class="product">
+            <img src="image/hinh7.png" alt="Sản Phẩm 7">
+            <h3>Nike IsoFly</h3>
+            <p>Older Kids' Basketball Shoes<br>Giá: 1,789,000đ</p>
+            <a href="https://www.nike.com/vn/t/isofly-older-basketball-shoes-fXX7gH/FN4384-001" class="button">Mua Ngay</a>
+        </div>
+        <div class="product">
+            <img src="image/hinh8.png" alt="Sản Phẩm 8">
+            <h3>Nike Flex Runner 3</h3>
+            <p>Younger Kids' Shoes<br>Giá: 1.325.000đ</p>
+            <a href="https://www.nike.com/vn/t/flex-runner-3-younger-shoes-xBPnvT/FN1449-601" class="button">Mua Ngay</a>
+        </div>
+    </div>
+</body>
+</html>
