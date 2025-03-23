@@ -1,0 +1,373 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Lab04.WebsiteBanhang.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Lab04.WebsiteBanhang.e9doxevhbj.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\10ab0911-ef55-4b59-8edb-7aaf170ab00b.png",
+      "PackagePath": "staticwebassets\\images\\10ab0911-ef55-4b59-8edb-7aaf170ab00b.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\181fee0a-dc27-4615-8388-8778670cae91.png",
+      "PackagePath": "staticwebassets\\images\\181fee0a-dc27-4615-8388-8778670cae91.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\2ca416af-de30-4fd8-a8b6-83dfdd0f5a21.jpg",
+      "PackagePath": "staticwebassets\\images\\2ca416af-de30-4fd8-a8b6-83dfdd0f5a21.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\3a3a6b27-5575-4d24-8d93-a78cbc7faed5.jpg",
+      "PackagePath": "staticwebassets\\images\\3a3a6b27-5575-4d24-8d93-a78cbc7faed5.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\5ab229af-d2f7-4f1a-b884-cd5e5a9e3c09.jpg",
+      "PackagePath": "staticwebassets\\images\\5ab229af-d2f7-4f1a-b884-cd5e5a9e3c09.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\6436285c-d074-47eb-917b-b258bb5dbf0e.jpg",
+      "PackagePath": "staticwebassets\\images\\6436285c-d074-47eb-917b-b258bb5dbf0e.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\64e4b6d0-5775-433d-bd99-9178208ceffe.jpg",
+      "PackagePath": "staticwebassets\\images\\64e4b6d0-5775-433d-bd99-9178208ceffe.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\7960bbe5-f4ee-4b08-8ef6-d6d9d57dd174.png",
+      "PackagePath": "staticwebassets\\images\\7960bbe5-f4ee-4b08-8ef6-d6d9d57dd174.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\91db98ba-9e83-4ed0-8905-117238d55220.png",
+      "PackagePath": "staticwebassets\\images\\91db98ba-9e83-4ed0-8905-117238d55220.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\a986ab52-02e1-4487-8ec3-60bb5de82dc0.png",
+      "PackagePath": "staticwebassets\\images\\a986ab52-02e1-4487-8ec3-60bb5de82dc0.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\ad9770a0-27c6-499a-9d18-4de99af05c26.png",
+      "PackagePath": "staticwebassets\\images\\ad9770a0-27c6-499a-9d18-4de99af05c26.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\b4387ee4-67d7-4c1e-b9ce-4c201b023f75.png",
+      "PackagePath": "staticwebassets\\images\\b4387ee4-67d7-4c1e-b9ce-4c201b023f75.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\baner3.jpg",
+      "PackagePath": "staticwebassets\\images\\baner3.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\images\\banner1.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\banner22.jpg",
+      "PackagePath": "staticwebassets\\images\\banner22.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\bce28527-beee-4789-8d40-6998852ad2b3.jpg",
+      "PackagePath": "staticwebassets\\images\\bce28527-beee-4789-8d40-6998852ad2b3.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\c0484403-4c44-43cd-9584-4af296ba3dec.png",
+      "PackagePath": "staticwebassets\\images\\c0484403-4c44-43cd-9584-4af296ba3dec.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\e88682f3-e3d6-4e5b-9b6a-6997b8fd3453.png",
+      "PackagePath": "staticwebassets\\images\\e88682f3-e3d6-4e5b-9b6a-6997b8fd3453.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\f991a3cb-4f53-4138-9d30-4b5e54ec3585.jpg",
+      "PackagePath": "staticwebassets\\images\\f991a3cb-4f53-4138-9d30-4b5e54ec3585.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\sanpham1.png",
+      "PackagePath": "staticwebassets\\images\\sanpham1.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\sanpham2.png",
+      "PackagePath": "staticwebassets\\images\\sanpham2.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\sanpham3.png",
+      "PackagePath": "staticwebassets\\images\\sanpham3.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\sanpham4.jpg",
+      "PackagePath": "staticwebassets\\images\\sanpham4.jpg"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\sanpham5.png",
+      "PackagePath": "staticwebassets\\images\\sanpham5.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\sanpham6.png",
+      "PackagePath": "staticwebassets\\images\\sanpham6.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\images\\sanpham7.png",
+      "PackagePath": "staticwebassets\\images\\sanpham7.png"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\Web-Programming-Lab\\Lab04.WebsiteBanhang\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Lab04.WebsiteBanhang.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Lab04.WebsiteBanhang.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Lab04.WebsiteBanhang.props",
+      "PackagePath": "build\\Lab04.WebsiteBanhang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Lab04.WebsiteBanhang.props",
+      "PackagePath": "buildMultiTargeting\\Lab04.WebsiteBanhang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Lab04.WebsiteBanhang.props",
+      "PackagePath": "buildTransitive\\Lab04.WebsiteBanhang.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
