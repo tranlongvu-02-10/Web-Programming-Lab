@@ -579,3 +579,4 @@ C:\Web-Programming-Lab\Web-Programming-Lab\Lab04.WebsiteBanhang\obj\Debug\net8.0
 C:\Web-Programming-Lab\Web-Programming-Lab\Lab04.WebsiteBanhang\obj\Debug\net8.0\Lab04.WebsiteBanhang.pdb
 C:\Web-Programming-Lab\Web-Programming-Lab\Lab04.WebsiteBanhang\obj\Debug\net8.0\Lab04.WebsiteBanhang.genruntimeconfig.cache
 C:\Web-Programming-Lab\Web-Programming-Lab\Lab04.WebsiteBanhang\obj\Debug\net8.0\ref\Lab04.WebsiteBanhang.dll
+C:\Web-Programming-Lab\Web-Programming-Lab\Lab04.WebsiteBanhang\obj\Debug\net8.0\Lab04.WebsiteBanhang.sourcelink.json

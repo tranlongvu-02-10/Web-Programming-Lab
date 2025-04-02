@@ -2,7 +2,7 @@
 @model Lab04.WebsiteBanHang.Models.ShoppingCart
 
 <style>
-    /* Tùy chỉnh bảng giỏ hàng */
+    /* Giữ nguyên style của bạn */
     .cart-table {
         background: #ffffff;
         border: 2px solid #00246B;
@@ -66,6 +66,48 @@
         font-weight: 700;
         margin-bottom: 20px;
     }
+
+    .btn-add {
+        color: #00246B;
+        background: transparent;
+        border: 1px solid #00246B;
+        padding: 2px 8px;
+        border-radius: 5px;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        margin-left: 5px;
+    }
+
+    .btn-add:hover {
+        background: #00246B;
+        color: #ffffff;
+    }
+
+    .btn-subtract {
+        color: #00246B;
+        background: transparent;
+        border: 1px solid #00246B;
+        padding: 2px 8px;
+        border-radius: 5px;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 5px;
+    }
+
+    .btn-subtract:hover {
+        background: #00246B;
+        color: #ffffff;
+    }
 </style>
 
 <div class="container mt-4">
@@ -85,7 +127,11 @@
             { 
                 <tr> 
                     <td>@item.Name</td> 
-                    <td>@item.Quantity</td> 
+                    <td>
+                        <a asp-action="SubtractFromCart" asp-route-productId="@item.ProductId" class="btn btn-subtract">-</a>
+                        @item.Quantity
+                        <a asp-action="AddToCart" asp-route-productId="@item.ProductId" class="btn btn-add">+</a>
+                    </td> 
                     <td>@item.Price.ToString("C")</td> 
                     <td>@((item.Price * item.Quantity).ToString("C"))</td> 
                     <td> 
@@ -95,6 +141,7 @@
             } 
         </table> 
         <div class="text-end mt-3">
+            <h4>Total: @Model.Items.Sum(i => i.Price * i.Quantity).ToString("C")</h4>
             <a asp-action="Checkout" class="btn btn-checkout">Proceed to Checkout</a>
         </div>
     }
