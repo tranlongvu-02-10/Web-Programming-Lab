@@ -62,3 +62,65 @@
         </table>
     </div>
 </div>
+
+<style>
+    /* Hiệu ứng hover cho hàng trong bảng */
+    .table tbody tr:hover {
+        background-color:rgb(173, 206, 240); /* Màu xám nhạt khi hover */
+        transition: background-color 0.3s ease; /* Chuyển màu mượt mà */
+    }
+
+    /* Hiệu ứng hover cho ảnh */
+    .table td img {
+        transition: transform 0.3s ease; /* Hiệu ứng phóng to mượt mà */
+    }
+
+    .table td img:hover {
+        transform: scale(1.1); /* Phóng to ảnh 10% khi hover */
+    }
+
+    /* Hiệu ứng hover cho tên sản phẩm */
+    .table td a.text-primary {
+        transition: color 0.3s ease; /* Chuyển màu mượt mà */
+    }
+
+    .table td a.text-primary:hover {
+        color: #0056b3; /* Màu xanh đậm hơn khi hover */
+        text-decoration: underline; /* Gạch chân khi hover */
+    }
+
+    /* Hiệu ứng hover cho nút Create New */
+    .btn-success {
+        transition: background-color 0.3s ease, transform 0.2s ease; /* Chuyển màu và phóng to mượt mà */
+    }
+
+    .btn-success:hover {
+        background-color: #218838; /* Màu xanh đậm hơn */
+        transform: scale(1.05); /* Phóng to nhẹ */
+    }
+
+    /* Hiệu ứng hover cho nút Edit */
+    .btn-warning {
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-warning:hover {
+        background-color: #e0a800; /* Màu vàng đậm hơn */
+        transform: scale(1.05);
+    }
+
+    /* Hiệu ứng hover cho nút Delete */
+    .btn-danger {
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-danger:hover {
+        background-color: #c82333; /* Màu đỏ đậm hơn */
+        transform: scale(1.05);
+    }
+
+    /* Đảm bảo các nút trong cột Actions căn đều */
+    .table td .btn {
+        margin: 0 5px; /* Khoảng cách giữa các nút */
+    }
+</style>

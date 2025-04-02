@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab04.WebsiteBanhang")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d9a2f8a3b0a0238e2a02f1445ec305bdb3ef1e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2323b867c05a8222260ee5d6802cdbb112ef49de")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab04.WebsiteBanhang")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab04.WebsiteBanhang")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

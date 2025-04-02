@@ -14,14 +14,12 @@
                         <div class="carousel-inner">
                             @if (!string.IsNullOrEmpty(Model.ImageUrl))
                             {
-                                <!-- Hiển thị ImageUrl trước -->
                                 <div class="carousel-item active">
                                     <img src="@Model.ImageUrl" class="d-block w-100" alt="@Model.Name" style="max-height: 400px; object-fit: contain;" />
                                 </div>
                             }
                             @if (Model.Images != null && Model.Images.Any())
                             {
-                                <!-- Hiển thị các ảnh từ Images -->
                                 @foreach (var image in Model.Images)
                                 {
                                     <div class="carousel-item @(string.IsNullOrEmpty(Model.ImageUrl) && image == Model.Images.First() ? "active" : "")">
@@ -32,7 +30,6 @@
                         </div>
                         @if ((!string.IsNullOrEmpty(Model.ImageUrl) && Model.Images != null && Model.Images.Any()) || (Model.Images != null && Model.Images.Count > 1))
                         {
-                            <!-- Hiển thị nút điều hướng nếu có nhiều hơn 1 ảnh -->
                             <button class="carousel-control-prev" type="button" data-bs-target="#productImageCarousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
@@ -60,6 +57,87 @@
         </div>
     </div>
 </div>
+
+<style>
+    /* Tùy chỉnh tổng thể */
+    .container.mt-5 {
+        max-width: 900px; /* Giới hạn chiều rộng cho gọn gàng */
+    }
+
+    h2.text-center {
+        color: #00246B; /* Màu xanh đậm cho tiêu đề */
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .card {
+        border: none; /* Bỏ viền mặc định */
+        border-radius: 15px; /* Bo góc mềm mại */
+        background: #ffffff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+    }
+
+    /* Tùy chỉnh carousel */
+    .carousel-inner img {
+        border-radius: 10px; /* Bo góc ảnh */
+        transition: transform 0.3s ease; /* Hiệu ứng phóng to nhẹ khi hover */
+    }
+
+    .carousel-inner img:hover {
+        transform: scale(1.05); /* Phóng to nhẹ khi hover */
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%; /* Tăng vùng click */
+        opacity: 0.8;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color: #00246B; /* Màu nền nút điều hướng */
+        border-radius: 50%; /* Hình tròn */
+        padding: 10px;
+    }
+
+    /* Tùy chỉnh thông tin sản phẩm */
+    .col-md-6 h3 {
+        color: #28a745; /* Màu xanh lá cho giá */
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .col-md-6 p {
+        font-size: 1.1rem; /* Tăng kích thước chữ */
+        color: #333; /* Màu xám đậm cho dễ đọc */
+        line-height: 1.6; /* Giãn dòng */
+    }
+
+    .col-md-6 p strong {
+        color: #00246B; /* Màu xanh đậm cho nhãn */
+    }
+
+    /* Tùy chỉnh nút Back to List */
+    .btn-primary {
+        background: #00246B; /* Màu xanh đậm */
+        border: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        transition: background 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background: #001a4d; /* Màu tối hơn khi hover */
+    }
+
+    .btn-primary i {
+        margin-right: 5px; /* Khoảng cách giữa icon và chữ */
+    }
+
+    /* Tùy chỉnh khi không có ảnh */
+    .text-muted {
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+</style>
 
 @section Scripts {
     <!-- Nếu cần thêm script cho carousel (thường đã có trong Bootstrap) -->
