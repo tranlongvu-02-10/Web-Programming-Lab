@@ -43,44 +43,44 @@
     
     <!-- Giữ nguyên card view -->
     <div class="row" id="productsContainer">
-        @foreach (var product in Model)
-        {
-            <div class="col-md-4 mb-4 product-card">
-                <div class="card shadow-sm h-100">
-                    @if (product.Images != null && product.Images.Any())
-                    {
-                        <img src="@product.Images.First().Url" class="card-img-top" alt="@product.Name" style="height: 200px; object-fit: cover;" />
-                    }
-                    else if (!string.IsNullOrEmpty(product.ImageUrl))
-                    {
-                        <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name" style="height: 200px; object-fit: cover;" />
-                    }
-                    else
-                    {
-                        <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
-                            <span class="text-muted">No image</span>
-                        </div>
-                    }
-                    <div class="card-body">
-                        <h5 class="card-title">@product.Name</h5>
-                        <p class="card-text"><strong>Price:</strong> $@product.Price.ToString("F2")</p>
-                        <p class="card-text text-truncate" title="@product.Description">@product.Description</p>
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4 mb-4 product-card">
+            <div class="card shadow-sm h-100">
+                @if (product.Images != null && product.Images.Any())
+                {
+                    <img src="@product.Images.First().Url" class="card-img-top" alt="@product.Name" style="height: 200px; object-fit: cover;" />
+                }
+                else if (!string.IsNullOrEmpty(product.ImageUrl))
+                {
+                    <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name" style="height: 200px; object-fit: cover;" />
+                }
+                else
+                {
+                    <div class="card-img-top bg-light d-flex align-items-center justify-content-center" style="height: 200px;">
+                        <span class="text-muted">No image</span>
                     </div>
-                    <div class="card-footer text-center bg-white border-0">
-                        <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary btn-sm">
-                            <i class="bi bi-eye"></i> View Details
-                        </a>
-                        <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
-                            <button class="btn btn-primary btn-sm">
-                                <i class="bi-cart-fill me-1"></i>
-                                Add to Cart
-                            </button>
-                        </a>
-                    </div>
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text"><strong>Price:</strong> $@product.Price.ToString("F2")</p>
+                    <p class="card-text text-truncate" title="@product.Description">@product.Description</p>
+                </div>
+                <div class="card-footer text-center bg-white border-0">
+                    <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary btn-sm">
+                        <i class="bi bi-eye"></i> View Details
+                    </a>
+                    <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
+                        <button class="btn btn-primary btn-sm">
+                            <i class="bi-cart-fill me-1"></i>
+                            Add to Cart
+                        </button>
+                    </a>
                 </div>
             </div>
-        }
-    </div>
+        </div>
+    }
+</div>
     
     <!-- Thêm phân trang -->
     <div class="row">
@@ -263,6 +263,81 @@
     .card-footer a .btn {
         width: 100%; /* Đầy đủ chiều rộng của thẻ a cha */
         border: none; /* Đồng bộ với btn-primary nếu cần */
+    }
+
+    /* Tùy chỉnh cơ bản cho card */
+    .product-card .card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+    }
+
+    /* Hiệu ứng hover cho toàn bộ card */
+    .product-card .card:hover {
+        transform: translateY(-5px); /* Nâng card lên nhẹ */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Tăng bóng */
+    }
+
+    /* Hiệu ứng hover cho ảnh sản phẩm */
+    .card-img-top {
+        transition: transform 0.3s ease;
+    }
+
+    .card-img-top:hover {
+        transform: scale(1.05); /* Phóng to ảnh 5% */
+    }
+
+    /* Hiệu ứng hover cho tiêu đề */
+    .card-title {
+        color: #00246B; /* Màu xanh đậm */
+        transition: color 0.3s ease;
+    }
+
+    .card-title:hover {
+        color: #0056b3; /* Màu xanh đậm hơn khi hover */
+    }
+
+    /* Hiệu ứng hover cho giá */
+    .card-text strong {
+        color: #28a745; /* Màu xanh lá cho giá */
+        transition: color 0.3s ease;
+    }
+
+    .card-text strong:hover {
+        color: #218838; /* Màu xanh lá đậm hơn khi hover */
+    }
+
+    /* Hiệu ứng hover cho mô tả */
+    .card-text.text-truncate {
+        color: #6c757d; /* Màu xám nhạt */
+        transition: color 0.3s ease;
+    }
+
+    .card-text.text-truncate:hover {
+        color: #343a40; /* Màu xám đậm hơn khi hover */
+    }
+
+    /* Hiệu ứng hover cho nút trong card-footer */
+    .card-footer .btn {
+        width: 140px; /* Chiều rộng cố định để bằng nhau */
+        margin: 0 5px; /* Khoảng cách giữa hai nút */
+        padding: 6px 12px; /* Đệm bên trong đồng nhất */
+        background: #00246B; /* Màu xanh đậm */
+        border: none;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .card-footer .btn:hover {
+        background: #001a4d; /* Màu tối hơn khi hover */
+        transform: scale(1.05); /* Phóng to nhẹ */
+    }
+
+    .card-footer a {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .card-footer a .btn {
+        width: 100%;
     }
 </style>
 }
