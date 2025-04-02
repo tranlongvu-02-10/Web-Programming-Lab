@@ -97,6 +97,24 @@
     border-radius: 10px;
 }
 
+/* CSS cho footer mới */
+footer {
+    background-color: #004080; /* Màu xanh đậm */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 
     </style>
 </head>
@@ -224,6 +242,16 @@
 </section>
 }
 
+@if (ViewContext.RouteData.Values["controller"]?.ToString() == "Home" && ViewContext.RouteData.Values["action"]?.ToString() == "Index")
+{
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2025 Website Bán Hàng. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+}
 
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

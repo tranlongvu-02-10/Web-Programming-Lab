@@ -1,4 +1,68 @@
 @using Lab04.WebsiteBanHang.Models
 @model int 
-<h2>Order Completed</h2> 
-<p>Your order with ID @Model has been placed successfully.</p>
+
+<div class="container mt-5">
+    <div class="card p-4 shadow-sm text-center">
+        <h2 class="text-success mb-3">Order Completed</h2> 
+        <p class="text-muted mb-4">Your order with ID <strong class="text-primary">@Model</strong> has been placed successfully.</p>
+        <div class="mt-4">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary">
+                <i class="bi bi-arrow-left me-2"></i>Continue Shopping
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Tùy chỉnh tổng thể */
+    .container.mt-5 {
+        max-width: 600px; /* Giới hạn chiều rộng cho gọn gàng */
+    }
+
+    .card {
+        border: none; /* Bỏ viền mặc định */
+        border-radius: 15px; /* Bo góc mềm mại */
+        background: #ffffff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+    }
+
+    /* Tùy chỉnh tiêu đề */
+    h2.text-success {
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #28a745; /* Màu xanh lá cho thông báo thành công */
+        letter-spacing: 1px;
+    }
+
+    /* Tùy chỉnh thông báo */
+    p.text-muted {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #6c757d; /* Màu xám nhạt */
+    }
+
+    p.text-muted strong.text-primary {
+        color: #00246B; /* Màu xanh đậm cho Order ID */
+        font-weight: 600;
+    }
+
+    /* Tùy chỉnh nút Continue Shopping */
+    .btn-primary {
+        background: #00246B; /* Màu xanh đậm */
+        border: none;
+        padding: 10px 25px;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+        background: #001a4d; /* Màu tối hơn khi hover */
+        transform: scale(1.05); /* Phóng to nhẹ */
+    }
+
+    .btn-primary i {
+        margin-right: 8px; /* Khoảng cách giữa icon và chữ */
+    }
+</style>
