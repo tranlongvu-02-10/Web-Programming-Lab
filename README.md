@@ -1,9 +1,9 @@
-# 🛒 Website Bán Hàng
+#  Website Bán Hàng
 
 ##  Giới thiệu
 Đây là dự án website bán hàng được phát triển trong môn **Lập trình Web**. Dự án xây dựng hệ thống thương mại điện tử cơ bản với các tính năng như quản lý sản phẩm, giỏ hàng, thanh toán và quản lý đơn hàng.
 
-## ⚙ Công nghệ sử dụng
+##  Công nghệ sử dụng
 - **Front-end**: HTML, CSS, JavaScript, Bootstrap
 - **Back-end**: ASP.NET MVC5
 - **Cơ sở dữ liệu**: SQL Server
