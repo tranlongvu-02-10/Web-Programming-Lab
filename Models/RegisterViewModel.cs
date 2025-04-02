@@ -30,5 +30,9 @@ namespace Lab04.WebsiteBanHang.Models
 
         [Display(Name = "Tuổi")]
         public int? Age { get; set; }
+
+        [Required(ErrorMessage = "Vui lòng chọn vai trò")]
+        [Display(Name = "Vai trò")]
+        public string SelectedRole { get; set; }
     }
-} 
+}

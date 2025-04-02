@@ -1,14 +1,51 @@
 ﻿@model List<Lab04.WebsiteBanHang.Models.Product>
 @{
     ViewData["Title"] = "Home Page";
+    int numOfQuantity = 1;
 }
+
+<!-- Thêm CSS cho DataTables -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.bootstrap5.min.css">
 
 <div class="container mt-5">
     <h2 class="text-center mb-4">Our Products</h2>
-    <div class="row">
+    
+    <!-- Thêm search box và các control của DataTables -->
+    <div class="row mb-3 justify-content-between align-items-center">
+    <div class="col-md-auto">
+        <div class="dataTables_length">
+            <label class="form-label mb-0">
+                Hiển thị 
+                <select id="showEntries" class="form-select form-select-sm d-inline-block w-auto mx-1">
+                    <option value="3">3</option>
+                    <option value="6" selected>6</option>
+                    <option value="9">9</option>
+                    <option value="12">12</option>
+                    <option value="-1">Tất cả</option>
+                </select> sản phẩm
+            </label>
+        </div>
+    </div>
+    <div class="col-md-auto">
+        <div class="dataTables_filter float-md-end">
+            <label class="form-label mb-0">
+                <div class="input-group input-group-sm">
+                    <input type="search" id="searchBox" class="form-control" placeholder="Nhập tên hoặc mô tả..." style="width: 200px;">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+            </label>
+        </div>
+    </div>
+</div>
+    
+    <!-- Giữ nguyên card view -->
+    <div class="row" id="productsContainer">
         @foreach (var product in Model)
         {
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 product-card">
                 <div class="card shadow-sm h-100">
                     @if (product.Images != null && product.Images.Any())
                     {
@@ -33,9 +70,183 @@
                         <a asp-controller="Product" asp-action="Details" asp-route-id="@product.Id" class="btn btn-primary btn-sm">
                             <i class="bi bi-eye"></i> View Details
                         </a>
+                        <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@product.Id" asp-route-quantity="@numOfQuantity">
+                            <button class="btn btn-outline-dark">
+                                <i class="bi-cart-fill me-1"></i>
+                                Add to Cart
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         }
     </div>
+    
+    <!-- Thêm phân trang -->
+    <div class="row">
+        <div class="col-12">
+            <div class="dataTables_paginate paging_simple_numbers" id="paginationControls">
+                <!-- Pagination sẽ được thêm bằng JavaScript -->
+            </div>
+        </div>
+    </div>
 </div>
+
+@section Scripts {
+    <!-- Thêm thư viện DataTables -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    
+    <script>
+    $(document).ready(function() {
+        // Tạo một mảng dữ liệu từ các card hiện có
+        var products = [];
+        $('.product-card').each(function() {
+            var card = $(this);
+            products.push({
+                element: card,
+                name: card.find('.card-title').text(),
+                price: parseFloat(card.find('.card-text strong').next().text().replace('$', '')),
+                description: card.find('.card-text.text-truncate').text()
+            });
+        });
+        
+        // Biến lưu trạng thái hiện tại
+        var currentPage = 1;
+        var entriesPerPage = 6;
+        var filteredProducts = products;
+        
+        // Hàm hiển thị sản phẩm theo trang
+        function displayProducts() {
+            $('.product-card').hide();
+            var start = (currentPage - 1) * entriesPerPage;
+            var end = start + entriesPerPage;
+            
+            filteredProducts.slice(start, end).forEach(function(product) {
+                product.element.show();
+            });
+            
+            updatePagination();
+        }
+        
+        // Hàm cập nhật phân trang (phiên bản cải tiến)
+        function updatePagination() {
+            var totalPages = Math.ceil(filteredProducts.length / entriesPerPage);
+            var paginationHtml = '';
+            
+            if (totalPages > 1) {
+                paginationHtml += '<ul class="pagination justify-content-center">';
+                
+                // Nút Previous
+                paginationHtml += '<li class="page-item ' + (currentPage === 1 ? 'disabled' : '') + '">';
+                paginationHtml += '<a class="page-link" href="#" data-page="prev">&laquo;</a>';
+                paginationHtml += '</li>';
+                
+                // Hiển thị tối đa 5 nút trang (trang hiện tại ± 2)
+                var startPage = Math.max(1, currentPage - 2);
+                var endPage = Math.min(totalPages, currentPage + 2);
+                
+                // Nút trang đầu tiên
+                if (startPage > 1) {
+                    paginationHtml += '<li class="page-item">';
+                    paginationHtml += '<a class="page-link" href="#" data-page="1">1</a>';
+                    paginationHtml += '</li>';
+                    if (startPage > 2) {
+                        paginationHtml += '<li class="page-item disabled"><span class="page-link">...</span></li>';
+                    }
+                }
+                
+                // Các nút trang chính
+                for (var i = startPage; i <= endPage; i++) {
+                    paginationHtml += '<li class="page-item ' + (currentPage === i ? 'active' : '') + '">';
+                    paginationHtml += '<a class="page-link" href="#" data-page="' + i + '">' + i + '</a>';
+                    paginationHtml += '</li>';
+                }
+                
+                // Nút trang cuối cùng
+                if (endPage < totalPages) {
+                    if (endPage < totalPages - 1) {
+                        paginationHtml += '<li class="page-item disabled"><span class="page-link">...</span></li>';
+                    }
+                    paginationHtml += '<li class="page-item">';
+                    paginationHtml += '<a class="page-link" href="#" data-page="' + totalPages + '">' + totalPages + '</a>';
+                    paginationHtml += '</li>';
+                }
+                
+                // Nút Next
+                paginationHtml += '<li class="page-item ' + (currentPage === totalPages ? 'disabled' : '') + '">';
+                paginationHtml += '<a class="page-link" href="#" data-page="next">&raquo;</a>';
+                paginationHtml += '</li>';
+                
+                paginationHtml += '</ul>';
+            }
+            
+            $('#paginationControls').html(paginationHtml);
+        }
+        
+        // Xử lý tìm kiếm
+        $('#searchBox').on('keyup', function() {
+            var searchText = $(this).val().toLowerCase();
+            
+            filteredProducts = products.filter(function(product) {
+                return product.name.toLowerCase().includes(searchText) || 
+                       product.description.toLowerCase().includes(searchText) || 
+                       product.price.toString().includes(searchText);
+            });
+            
+            currentPage = 1;
+            displayProducts();
+        });
+        
+        // Xử lý thay đổi số lượng hiển thị
+        $('#showEntries').change(function() {
+            entriesPerPage = $(this).val() === '-1' ? filteredProducts.length : parseInt($(this).val());
+            currentPage = 1;
+            displayProducts();
+        });
+        
+        // Xử lý phân trang
+        $(document).on('click', '.page-link', function(e) {
+            e.preventDefault();
+            var action = $(this).data('page');
+            
+            if (action === 'prev' && currentPage > 1) {
+                currentPage--;
+            } else if (action === 'next' && currentPage < Math.ceil(filteredProducts.length / entriesPerPage)) {
+                currentPage++;
+            } else if (!isNaN(action)) {
+                currentPage = parseInt(action);
+            }
+            
+            displayProducts();
+        });
+        
+        // Hiển thị ban đầu
+        displayProducts();
+    });
+</script>
+
+<style>
+    /* CSS cho phân trang */
+    .pagination {
+        margin-top: 20px;
+    }
+    .page-item.active .page-link {
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+    }
+    .page-link {
+        color: #0d6efd;
+        padding: 6px 12px;
+    }
+    .page-item.disabled .page-link {
+        color: #6c757d;
+    }
+    .page-link:hover {
+        z-index: 2;
+        color: #0a58ca;
+        background-color: #e9ecef;
+        border-color: #dee2e6;
+    }
+</style>
+}

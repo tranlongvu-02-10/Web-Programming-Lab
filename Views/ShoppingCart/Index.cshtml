@@ -1,0 +1,107 @@
+@using Lab04.WebsiteBanHang.Models
+@model Lab04.WebsiteBanHang.Models.ShoppingCart
+
+<style>
+    /* Tùy chỉnh bảng giỏ hàng */
+    .cart-table {
+        background: #ffffff;
+        border: 2px solid #00246B;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .cart-table th {
+        background: #00246B;
+        color: #CADCFC;
+        font-weight: 500;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .cart-table td {
+        color: #00246B;
+        text-align: center;
+        padding: 12px;
+        vertical-align: middle;
+    }
+
+    .cart-table tr:nth-child(even) {
+        background: #f8f9fa;
+    }
+
+    .cart-table tr:hover {
+        background: #e9ecef;
+    }
+
+    .btn-remove {
+        color: #ffffff;
+        background: #dc3545;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    .btn-remove:hover {
+        background: #c82333;
+        color: #ffffff;
+    }
+
+    .btn-checkout {
+        background: #00246B;
+        color: #CADCFC;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    .btn-checkout:hover {
+        background: #001a4d;
+        color: #ffffff;
+    }
+
+    .cart-header {
+        color: #00246B;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+</style>
+
+<div class="container mt-4">
+    <h2 class="cart-header">Your Cart</h2> 
+
+    @if (Model.Items != null && Model.Items.Any())
+    {
+        <table class="table cart-table"> 
+            <tr> 
+                <th>Product</th> 
+                <th>Quantity</th> 
+                <th>Price</th> 
+                <th>Total</th> 
+                <th>Actions</th>
+            </tr> 
+            @foreach (var item in Model.Items) 
+            { 
+                <tr> 
+                    <td>@item.Name</td> 
+                    <td>@item.Quantity</td> 
+                    <td>@item.Price.ToString("C")</td> 
+                    <td>@((item.Price * item.Quantity).ToString("C"))</td> 
+                    <td> 
+                        <a asp-action="RemoveFromCart" asp-route-productId="@item.ProductId" class="btn btn-remove">Remove</a> 
+                    </td> 
+                </tr> 
+            } 
+        </table> 
+        <div class="text-end mt-3">
+            <a asp-action="Checkout" class="btn btn-checkout">Proceed to Checkout</a>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center" role="alert">
+            Your cart is empty. <a asp-controller="Home" asp-action="Index" class="alert-link">Continue shopping</a>.
+        </div>
+    }
+</div>

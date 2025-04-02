@@ -9,113 +9,125 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab04.WebsiteBanhang
 build_property.RootNamespace = Lab04.WebsiteBanhang
-build_property.ProjectDir = F:\Web-Programming-Lab\Lab04.WebsiteBanhang\
+build_property.ProjectDir = C:\Web-Programming-Lab\Web-Programming-Lab\Lab04.WebsiteBanhang\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\Web-Programming-Lab\Lab04.WebsiteBanhang
+build_property.MSBuildProjectDirectory = C:\Web-Programming-Lab\Web-Programming-Lab\Lab04.WebsiteBanhang
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Account/Login.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Account/Logout.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Account/Manage.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Account/Manage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxNYW5hZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Account/Register.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Category/Create.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Category/Delete.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Category/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Category/Edit.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Category/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Category/Index.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Home/Index.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Create.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Delete.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Details.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Edit.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Index.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/AccessDenied.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFjY2Vzc0RlbmllZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/Error.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/_LoginPartial.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/User/Create.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/ShoppingCart/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XENoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/ShoppingCart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/ShoppingCart/OrderCompleted.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XE9yZGVyQ29tcGxldGVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/User/Delete.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/User/Edit.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/User/Index.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/_ViewImports.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/_ViewStart.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/_Layout.cshtml]
+[C:/Web-Programming-Lab/Web-Programming-Lab/Lab04.WebsiteBanhang/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-x3spsk7f6t

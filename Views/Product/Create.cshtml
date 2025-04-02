@@ -18,7 +18,7 @@
         </div>
         <div class="form-group mb-3">
             <label asp-for="Description" class="form-label fw-bold">Mô tả</label>
-            <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+            <textarea asp-for="Description" class="form-control" id="descriptionEditor" rows="4"></textarea>
         </div>
         <div class="form-group mb-3">
             <label asp-for="CategoryId" class="form-label fw-bold">Danh mục</label>
@@ -42,4 +42,21 @@
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
-} 
+    <!-- Thêm thư viện CKEditor -->
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        // Khởi tạo CKEditor cho textarea có id là descriptionEditor
+        CKEDITOR.replace('descriptionEditor', {
+            // Cấu hình thêm nếu cần
+            toolbar: [
+                { name: 'basicstyles', items: ['Bold', 'Italic', 'Underline', 'Strike', 'RemoveFormat'] },
+                { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Blockquote'] },
+                { name: 'links', items: ['Link', 'Unlink'] },
+                { name: 'insert', items: ['Image', 'Table'] },
+                { name: 'tools', items: ['Maximize'] },
+                { name: 'document', items: ['Source'] }
+            ],
+            height: 300
+        });
+    </script>
+}

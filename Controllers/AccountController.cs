@@ -6,6 +6,8 @@ using Lab04.WebsiteBanHang.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Lab04.WebsiteBanHang.Controllers
 {
@@ -27,8 +29,14 @@ namespace Lab04.WebsiteBanHang.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public IActionResult Register()
+        public async Task<IActionResult> Register()
         {
+            var allowedRoles = new List<string> { SD.Role_Customer, SD.Role_Employee };
+            var roles = await _roleManager.Roles
+                .Where(r => allowedRoles.Contains(r.Name))
+                .Select(r => new { r.Name })
+                .ToListAsync();
+            ViewBag.Roles = new SelectList(roles, "Name", "Name");
             return View();
         }
 
@@ -36,18 +44,34 @@ namespace Lab04.WebsiteBanHang.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
+            // Khai báo allowedRoles ở ngoài scope để sử dụng ở cả hai nơi
+            var allowedRoles = new List<string> { SD.Role_Customer, SD.Role_Employee };
+
             if (ModelState.IsValid)
             {
                 if (model.Age.HasValue && (model.Age.Value < 17 || model.Age.Value > 100))
                 {
                     ModelState.AddModelError("Age", "Tuổi phải từ 17 đến 100");
-                    return View(model);
                 }
 
                 var existingUser = await _userManager.FindByEmailAsync(model.Email);
                 if (existingUser != null)
                 {
                     ModelState.AddModelError("Email", "Email đã được sử dụng.");
+                }
+
+                if (!allowedRoles.Contains(model.SelectedRole) || !await _roleManager.RoleExistsAsync(model.SelectedRole))
+                {
+                    ModelState.AddModelError("SelectedRole", "Vai trò không hợp lệ hoặc không được phép.");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    var roles = await _roleManager.Roles
+                        .Where(r => allowedRoles.Contains(r.Name))
+                        .Select(r => new { r.Name })
+                        .ToListAsync();
+                    ViewBag.Roles = new SelectList(roles, "Name", "Name", model.SelectedRole);
                     return View(model);
                 }
 
@@ -64,17 +88,36 @@ namespace Lab04.WebsiteBanHang.Controllers
 
                 if (result.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(user, SD.Role_Customer);
+                    await _userManager.AddToRoleAsync(user, model.SelectedRole);
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return RedirectToAction("Index", "Home");
                 }
 
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    if (error.Code.Contains("Password"))
+                    {
+                        ModelState.AddModelError("Password", error.Description);
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
                 }
+
+                var rolesOnError = await _roleManager.Roles
+                    .Where(r => allowedRoles.Contains(r.Name))
+                    .Select(r => new { r.Name })
+                    .ToListAsync();
+                ViewBag.Roles = new SelectList(rolesOnError, "Name", "Name", model.SelectedRole);
             }
 
+            // Gán ViewBag.Roles khi ModelState không hợp lệ ngay từ đầu
+            var rolesOnInvalid = await _roleManager.Roles
+                .Where(r => allowedRoles.Contains(r.Name))
+                .Select(r => new { r.Name })
+                .ToListAsync();
+            ViewBag.Roles = new SelectList(rolesOnInvalid, "Name", "Name", model.SelectedRole);
             return View(model);
         }
 
@@ -152,23 +195,20 @@ namespace Lab04.WebsiteBanHang.Controllers
 
             if (ModelState.IsValid)
             {
-                // Kiểm tra FullName không để trống
                 if (string.IsNullOrWhiteSpace(model.FullName))
                 {
                     ModelState.AddModelError("FullName", "Họ và tên không được để trống.");
-                    model.Email = user.Email; // Gán lại Email để không bị mất
+                    model.Email = user.Email;
                     return View(model);
                 }
 
-                // Kiểm tra Age
                 if (model.Age.HasValue && (model.Age.Value < 17 || model.Age.Value > 100))
                 {
                     ModelState.AddModelError("Age", "Tuổi phải từ 17 đến 100.");
-                    model.Email = user.Email; // Gán lại Email để không bị mất
+                    model.Email = user.Email;
                     return View(model);
                 }
 
-                // Cập nhật thông tin, không thay đổi Email
                 user.FullName = model.FullName;
                 user.Address = model.Address;
                 user.Age = model.Age;
@@ -186,7 +226,6 @@ namespace Lab04.WebsiteBanHang.Controllers
                 }
             }
 
-            // Nếu ModelState không hợp lệ, gán lại Email để không bị mất
             model.Email = user.Email;
             return View(model);
         }
